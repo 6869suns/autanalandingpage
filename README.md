@@ -1,0 +1,2 @@
+# autona landing page vol1
+ mailing list sign up for autona beta launch interested future users
