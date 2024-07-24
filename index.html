@@ -5,144 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autana - Your Personal Safety Dashboard</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0e6ff;
-            color: #333;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .header {
-            background-color: #8a2be2;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        h2 {
-            color: #8a2be2;
-            font-size: 24px;
-        }
-        .feature {
+        /* ... (keep your existing styles) ... */
+        
+        .google-form-container {
+            width: 100%;
+            max-width: 640px;
+            margin: 20px auto;
             background-color: white;
             border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
         }
-        .feature h3 {
-            color: #8a2be2;
-            margin-top: 0;
+        .google-form-container iframe {
+            width: 100%;
+            height: 720px;
+            border: none;
         }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #8a2be2;
-        }
-        .svg-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .google-form-placeholder {
-            background-color: #f0f0f0;
-            border: 2px dashed #8a2be2;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
+        @media (max-width: 640px) {
+            .google-form-container iframe {
+                height: 800px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Autana</h1>
-        <p>Your dashboard dedicated to your safety preferences.</p>
+    <!-- ... (keep your existing content) ... -->
+    
+    <h2>Test the "dummy dashboard"</h2>
+    <p>Give feedback and ideas by joining our early adopter mailing list. Invite your friends!</p>
+    
+    <div class="google-form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegC4jMB4pHzL5wjEObvxfWRLCYMCyY7kISMXYY3_KHDFyFNg/viewform?embedded=true">Loading…</iframe>
     </div>
     
-    <div class="container">
-        <div class="svg-container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-              <defs>
-                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#FF85A2;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#FF4E78;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-              
-              <!-- Background -->
-              <rect width="200" height="200" fill="#FFF5F7" />
-              
-              <!-- Flower petals (represent permission levels) -->
-              <g id="flower">
-                <path d="M100,90 Q120,70 100,50 Q80,70 100,90" fill="#FF85A2" opacity="0.7">
-                  <animate attributeName="opacity" values="0.7;0.9;0.7" dur="3s" repeatCount="indefinite" />
-                </path>
-                <path d="M100,90 Q130,90 130,60 Q100,60 100,90" fill="#FF4E78" opacity="0.6">
-                  <animate attributeName="opacity" values="0.6;0.8;0.6" dur="3s" repeatCount="indefinite" />
-                </path>
-                <path d="M100,90 Q130,110 150,90 Q120,70 100,90" fill="#FF85A2" opacity="0.5">
-                  <animate attributeName="opacity" values="0.5;0.7;0.5" dur="3s" repeatCount="indefinite" />
-                </path>
-                <path d="M100,90 Q110,120 140,130 Q130,100 100,90" fill="#FF4E78" opacity="0.4">
-                  <animate attributeName="opacity" values="0.4;0.6;0.4" dur="3s" repeatCount="indefinite" />
-                </path>
-                <path d="M100,90 Q80,120 60,110 Q80,90 100,90" fill="#FF85A2" opacity="0.3">
-                  <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite" />
-                </path>
-              </g>
-              
-              <!-- Stem (represents real-time updates) -->
-              <path d="M100,90 Q95,140 100,190" fill="none" stroke="#4CAF50" stroke-width="4" stroke-dasharray="5 3">
-                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 100 100" to="10 100 100" dur="2s" repeatCount="indefinite" additive="sum" />
-              </path>
-              
-              <!-- Center of flower (represents active/inactive state) -->
-              <circle cx="100" cy="90" r="12" fill="#FF4E78">
-                <animate attributeName="r" values="12;14;12" dur="2s" repeatCount="indefinite" />
-              </circle>
-              
-              <!-- Unique identifier -->
-              <text x="100" y="195" font-family="Arial, sans-serif" font-size="14" fill="#FF4E78" text-anchor="middle">FL8R9Y</text>
-            </svg>
-        </div>
-
-        <h2>Your privacy, Your way.</h2>
-        <p>Try a "dummy dashboard" for unwanted phone number or social media exchange requests</p>
-        
-        <div class="feature">
-            <h3>AI-Powered Protection</h3>
-            <p>Smart check-ups during rideshare rides.</p>
-        </div>
-        
-        <div class="feature">
-            <h3>SOS Dashboard</h3>
-            <p>Discreetly manage uncomfortable situations</p>
-        </div>
-        
-        <div class="feature">
-            <h3>Customized Contact Approvals</h3>
-            <p>Choose for yourself how anybody can contact you and how long they can contact you for.</p>
-        </div>
-        
-        <h2>Test the "dummy dashboard"</h2>
-        <p>Give feedback and ideas by joining our early adopter mailing list. Invite your friends!</p>
-        
-        <div class="google-form-placeholder">
-            <h3><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegC4jMB4pHzL5wjEObvxfWRLCYMCyY7kISMXYY3_KHDFyFNg/viewform?embedded=true" width="640" height="719" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></h3>
-            <
-        </div>
-        
-        <div class="footer">
-            <p>Autana Beta: Safety in your hand</p>
-        </div>
+    <div class="footer">
+        <p>Autana Beta: Safety in your hand</p>
+    </div>
+    
     </div>
 </body>
 </html>
