@@ -1,2 +1,2 @@
-# autona landing page 
+# autana landing page 
  mailing list sign up for autona beta launch interested future users
